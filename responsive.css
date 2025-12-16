@@ -1,0 +1,42 @@
+/* Mobile Navigation Button */
+.burger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+
+    nav {
+        position: relative;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: var(--secondary-color);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: var(--spacing-sm);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    section {
+        padding: var(--spacing-md);
+    }
+
+    #home h1 {
+        font-size: 2rem;
+    }
+}
